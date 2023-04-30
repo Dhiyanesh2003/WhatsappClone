@@ -1,9 +1,10 @@
 import style from "./RightWindow.module.css";
+import Header from "./Header/Header";
 
 function RightWindow() {
   return (
     <div className={style.mainDiv}>
-      <h1>Right Menu to be designed by Cavin</h1>
+      <Header></Header>
     </div>
   );
 }
