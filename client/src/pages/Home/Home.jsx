@@ -1,6 +1,6 @@
 import React from "react";
 import RightWindow from "../../components/cavin/RightWindow";
-import ChatList from "../../components/ChatList/ChatList";
+import LeftWindow from "../../components/deepak/LeftWindow";
 // import "../../App.css";
 
 // import LeftSidebar from "../../components/LeftSidebar/LeftSidebar";
@@ -10,7 +10,7 @@ import ChatList from "../../components/ChatList/ChatList";
 const Home = () => {
 	return (
 		<div>
-			<ChatList/>
+			<LeftWindow></LeftWindow>
 			<RightWindow></RightWindow>
 		</div>
 	);
