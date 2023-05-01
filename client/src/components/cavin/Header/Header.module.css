@@ -6,15 +6,6 @@
   padding: 0 0 0 15px;
 }
 
-.imgContainer {
-  height: 40px;
-  width: 40px;
-  background-color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-}
-
 img {
   margin: 0 20px 0 0;
   object-fit: cover;
