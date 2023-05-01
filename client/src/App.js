@@ -1,15 +1,12 @@
 import { BrowserRouter as Router } from "react-router-dom";
 import AllRoutes from "./AllRoutes";
-// import style from "./App.module.css";
-// import RightWindow from "./components/cavin/RightWindow";
-// import LeftMenu from "./components/deepak/LeftMenu";
-// import { useEffect } from "react";
+import style from "./App.module.css";
 
 function App() {
   return (
     <div className="App">
       <Router>
-          <AllRoutes />
+        <AllRoutes />
       </Router>
     </div>
   );
