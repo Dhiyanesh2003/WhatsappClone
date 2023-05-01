@@ -21,9 +21,11 @@ img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  flex-shrink: 1;
 }
 
-span {
+.name {
   color: white;
   font-weight: 600;
+  flex-grow: 3;
 }
