@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./LeftSidebar.css";
+import "./ChatList.css";
 
 import { NavLink } from "react-router-dom";
 
