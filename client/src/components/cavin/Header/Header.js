@@ -1,11 +1,11 @@
 import style from "./Header.module.css";
 
-function Header() {
+function Header(props) {
   return (
     <div className={style.header}>
       {/* <div className={style.imgContainer}> */}
-      <img src="https://pbs.twimg.com/media/DlnpurZW0AI5uk6.jpg:small"></img>
-      <span className={style.name}>Rae Lil Black</span>
+      <img src={props.img}></img>
+      <span className={style.name}>{props.name}</span>
       <span className={style.glass}>
         <svg viewBox="0 0 24 24" height="24" width="24" x="0px" y="0px">
           <path

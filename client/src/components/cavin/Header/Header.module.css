@@ -29,3 +29,18 @@ img {
   font-weight: 600;
   flex-grow: 3;
 }
+
+.glass {
+  margin: 0 10px 0 10px;
+}
+
+.glass,
+.name,
+img,
+.options:hover {
+  cursor: pointer;
+}
+
+.options {
+  margin: 0 10px 0 10px;
+}
