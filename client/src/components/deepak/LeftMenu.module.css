@@ -1,0 +1,6 @@
+.mainDiv {
+  width: 30%;
+  background-color: rgb(255, 127, 127);
+  min-height: 100%;
+  float: left;
+}
