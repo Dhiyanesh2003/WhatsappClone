@@ -1,8 +1,9 @@
 .mainFooter {
-  height: 62px;
+  /* height: 62px; */
   background-color: #202c33;
   display: flex;
   align-items: center;
+  flex: 0 62px;
 }
 
 .emoji {
@@ -40,4 +41,10 @@ span input:focus {
 
 .send {
   margin: 0 10px 0 20px;
+}
+
+.emoji,
+.attach,
+.send:hover {
+  cursor: pointer;
 }
