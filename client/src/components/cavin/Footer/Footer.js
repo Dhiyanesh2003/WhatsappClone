@@ -1,6 +1,26 @@
 import style from "./Footer.module.css";
+import { useEffect } from "react";
 
 function Footer() {
+  useEffect(() => {
+    let inputField = document.getElementById("msgInput");
+    inputField.addEventListener("keypress", (event) => {
+      if (event.key == "Enter") {
+        sendHandler();
+      }
+    });
+  }, []);
+
+  function sendHandler() {
+    let value = document.getElementById("msgInput").value;
+    if (value.length > 0) {
+      console.log("send handler working", "\n", value);
+      document.getElementById("msgInput").value = "";
+
+      // Dhiyanesh's place to work on sending data to backend
+    }
+  }
+
   return (
     <div className={style.mainFooter}>
       <span className={style.emoji}>
@@ -20,9 +40,9 @@ function Footer() {
         </svg>
       </span>
       <span className={style.messager}>
-        <input placeholder="Type a message"></input>
+        <input placeholder="Type a message" id="msgInput"></input>
       </span>
-      <span className={style.send}>
+      <span onClick={sendHandler} className={style.send}>
         <svg viewBox="0 0 24 24" height="24" width="24" x="0px" y="0px">
           <path
             fill="lightgrey"
