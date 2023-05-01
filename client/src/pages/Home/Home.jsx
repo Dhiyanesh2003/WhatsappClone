@@ -1,5 +1,5 @@
 import React from "react";
-
+import RightWindow from "../../components/cavin/RightWindow";
 import ChatList from "../../components/ChatList/ChatList";
 // import "../../App.css";
 
@@ -11,6 +11,7 @@ const Home = () => {
 	return (
 		<div>
 			<ChatList/>
+			<RightWindow></RightWindow>
 		</div>
 	);
 };
