@@ -3,11 +3,29 @@ import MsgSend from "./MsgSend.js";
 import MsgReceive from "./MsgReceive";
 
 function ChatWindow(props) {
+  // const checker = (convo) => {
+  //   if (convo["type"] == "send") {
+  //     return <MsgSend data={convo}></MsgSend>;
+  //   } else {
+  //     return <MsgReceive data={convo}></MsgReceive>;
+  //   }
+  // };
+  // console.log(
+  //   props.data.map((item) => {
+  //     return item["type"] == "send";
+  //   })
+  // );
+  // const Content = props.conversations.filter(checker);
+
   return (
     <div className={style.mainDiv}>
-      <MsgSend data={props.data[0]}></MsgSend>
-      <MsgReceive data={props.data[1]}></MsgReceive>
-      <MsgSend data={props.data[2]}></MsgSend>
+      {props.data.map((item) => {
+        if (item["type"] == "send") {
+          return <MsgSend data={item}></MsgSend>;
+        } else {
+          return <MsgReceive data={item}></MsgReceive>;
+        }
+      })}
     </div>
   );
 }
