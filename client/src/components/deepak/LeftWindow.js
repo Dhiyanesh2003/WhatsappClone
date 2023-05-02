@@ -1,5 +1,36 @@
 import style from "./LeftWindow.module.css";
-import searc from "./search.svg";
+import ChatList from "./ChatList";
+
+var contacts = [
+  {
+    name: "Sam",
+    src: "https://c.ndtvimg.com/2023-04/apniecfg_samantha-_625x300_27_April_23.jpg",
+    last: "hi babe",
+    ts: "10:00 am",
+    id: 0,
+  },
+  {
+    name: "Kajal",
+    src: "https://upload.wikimedia.org/wikipedia/commons/e/e2/Kajal_Aggarwal_on_the_sets_of_Queen_Kannada_remake.jpg",
+    last: "miss you",
+    ts: "10:00 am",
+    id: 1,
+  },
+  {
+    name: "Malavika",
+    src: "https://imagevars.gulfnews.com/2023/02/28/MALAVIKA-MOHAN_186989121e1_original-ratio.jpg",
+    last: "Oii",
+    ts: "10:00 am",
+    id: 2,
+  },
+  {
+    name: "Tammu",
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tamannaah_at_an_event_in_Cochin%2C_July_2018.jpg/220px-Tamannaah_at_an_event_in_Cochin%2C_July_2018.jpg",
+    last: "Love ya",
+    ts: "10:00 am",
+    id: 3,
+  },
+];
 
 function LeftWindow() {
   return (
@@ -54,7 +85,7 @@ function LeftWindow() {
           </div>
         </div>
 
-        <div className="chatlist"></div>
+        <ChatList data={contacts}></ChatList>
       </div>
     </div>
   );
