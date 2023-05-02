@@ -8,12 +8,12 @@ import LeftWindow from "../../components/deepak/LeftWindow";
 // import HomeMainbar from "../../components/HomeMainbar/HomeMainbar";
 
 const Home = () => {
-	return (
-		<div>
-			<LeftWindow></LeftWindow>
-			<RightWindow></RightWindow>
-		</div>
-	);
+  return (
+    <>
+      <LeftWindow></LeftWindow>
+      <RightWindow></RightWindow>
+    </>
+  );
 };
 
 export default Home;
